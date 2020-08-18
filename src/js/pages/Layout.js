@@ -7,9 +7,11 @@ export default class Layout extends React.Component {
       <div>
         <h1>KillerNews.net</h1>
         {this.props.children}
-        <Link to="/archives">archives</Link>,
-        <Link to="/settings">settings</Link>
+        <Link to="/archives"><button class="btn btn-danger">archives</button></Link>
+        <Link to="/settings" class="btn btn-success">settings</Link>
       </div>
     );
   }
 }
+
+// Linkの装飾方法は 2通りある。。。
