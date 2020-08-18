@@ -11,8 +11,8 @@ class Layout extends React.Component {
       <div>
         <h1>KillerNews.net</h1>
         {this.props.children}
-        <Link to="/archives/some-other-articles" class="btn btn-warning">archives (some other articles)</Link>
-        <Link to="/archives"><button class="btn btn-danger">archives</button></Link>
+        <Link to="/archives/some-other-articles?date=yesterday&filter=none" class="btn btn-warning">archives (some other articles)</Link>
+        <Link to="/archives?date=today&filter=hot" class="btn btn-danger">archives</Link>
         <Link to="/settings/main" class="btn btn-success">settings</Link>
         <Link to="/settings/extra" class="btn btn-success">settings (extra)</Link>
         <button class="btn btn-info" onClick={this.navigate.bind(this)}>featured</button>
